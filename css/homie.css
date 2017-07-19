@@ -1,0 +1,187 @@
+
+
+/* Put your custom styles here */
+*{
+  font-family:Helvetica, sans-serif, Arial, 'LiHei Pro', '微軟正黑體','新細明體';
+}
+.content-3-7
+{
+    background: #ececec;
+}
+
+#content-2-1 h3 {
+	color:#8DE7FF;
+}
+
+#content-2-1 h2 {
+	color:#fff;
+}
+
+#content-2-1 hr {
+	width:10%;
+	border-width:2px;
+	border-color:#F8E71C;
+}
+
+
+#features {
+	background:#ececec;
+	padding:80px 0px 100px 0px;
+}
+
+#features p {
+	font-size:20px;
+	text-align:center;
+  line-height:22px;
+  letter-spacing: 1px;
+	/*line-height:60%;*/
+	padding:0 20px;
+	display:block;
+	/*min-height:100px;*/
+}
+#features img{
+margin-bottom: 17px;
+  margin-top: 20px;
+}
+
+#lang_product_title{
+  font-family: Arial, '微軟正黑體','新細明體';
+}
+
+/*#features p {
+	font-size:18px;
+	text-align:center;
+	line-height:120%;
+	padding:0 20px;
+	display:block;
+	min-height:100px;
+}*/
+
+
+
+
+.padding_top_30 {
+	padding-top:30px;
+}
+
+.labal_desktop {
+	display:block;
+}
+
+.labal_mobile {
+	display:none;
+}
+
+@media (max-width:480px) {
+	#features p {
+		padding:0px;
+		font-size:16px;
+	}
+	.padding_top_30 {
+		margin-left:-30px;
+		margin-right:15px;
+		clear:both;
+	}
+	.labal_desktop {
+		display:none;
+	}
+
+	.labal_mobile {
+		display:block;
+		margin-top:50px;
+	}
+}
+
+
+
+.app_bg {
+	background:url(../images/ripple/img_bg_app.jpg) no-repeat;
+	background-size:cover;
+	padding:100px 0 0 0;
+	color:#fff;
+}
+.app_bg h3 {
+	font-size:60px;
+	margin-top:150px;
+}
+
+@media (max-width:480px) {
+	.app_bg h3 {
+		margin-top:0px;
+	}
+}
+
+.app_bg p {
+	font-size:24px;
+	line-height:120%;
+	margin-bottom:80px;
+	color:#fff;
+}
+
+
+.appview img {
+	vertical-align:bottom;
+	max-height:600px;
+}
+
+.appview {
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--Product page-----------------------------------------------------------*/
+
+.product_banner {
+	background:url(../images/ripple/img_product_banner.jpg);
+	background-size:cover;
+	text-align:center;
+	padding:80px 50px;
+}
+
+
+
+.tab-pane h3 {
+	font-size:56px;
+	color:#666;
+	margin-bottom:30px;
+}
+
+
+
+.tab-pane ul li {
+	line-height:130%;
+	font-size:18px;
+	list-style:disc;
+	margin-left:-15px;
+	color:#515157;
+}
+
+@media (max-width:786px) {
+	.tab-pane .pro_img {
+		width:80%;
+	}
+	.tab-pane h3 {
+	font-size:46px;
+	text-align:center;
+	}
+}
+
+.spec_table {
+	display:block;
+	margin-top:80px;
+}
+
+
+.pro_order {
+	display:block;
+	width:200px;
+	text-align:center;
+}

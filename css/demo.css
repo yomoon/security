@@ -1,0 +1,587 @@
+/* Scaffolding */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+a {
+  color: #228B22;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Backgrounds */
+
+.bg-holder {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #fff;
+}
+
+.bg-holder .content {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.bg-holder .content h2 {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.bg-holder#pic1 {
+  background-image: url('../images/senario/Security_Content_motion.jpg');
+}
+
+.bg-holder#pic2 {
+  background-image: url('../images/senario/security_img_door_box.jpg');
+}
+
+.bg-holder#pic3 {
+  background-image: url('../images/senario/security_img_shock_door_family.jpg');
+}
+/* scroll show */
+.scroll-box{
+    top: 10%;
+    left: 10%;
+}
+.h1-scroll-slide{
+    text-align: left;
+    color: aliceblue;
+    font-size: 80px;
+    font-weight: 800;
+}
+.h4-scroll-slide{
+    text-align: left;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 300;
+}
+.h1-scroll-slide-black{
+    text-align: left;
+    color: black;
+    font-size: 80px;
+    font-weight: 600;
+}
+.h4-scroll-slide-black{
+    text-align: left;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+}
+/* senario slide show */
+#custom_carousel .item {
+    background-size: cover;
+}
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+}
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid orange;
+}
+#custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:18px;
+}
+/* flip area */
+.h1-flip{
+    color: darkcyan;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+.h2-flip{
+    color: dimgray;
+    font-size: 24px;
+    text-align: center;
+}
+.flip-box{
+    position: relative;
+    left: 3%;
+}
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.flip-container:hover .flipper,  
+.flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 315px;
+	height: 200px;
+}
+.flip-container, .front2, .back2 {
+	width: 315px;
+	height: 200px;
+}
+.flip-container, .front3, .back3 {
+	width: 315px;
+	height: 200px;
+}
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+  
+    -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front2, .back2 {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front3, .back3 {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	background: url('../images/other_img/Security_FlipBox_Front3_EQL_CI_1.jpg') 0 0 no-repeat;
+    background-size: 315px 200px;
+    background-size: contain;
+	z-index: 2;
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+    background: url('../images/other_img/Security_FlipBox_Back_1.jpg') 0 0 no-repeat;
+    background-size: 315px 200px;
+}
+
+.front2 {
+	background: url('../images/other_img/Security_FlipBox_Front3_EQL_CI_2.jpg') 0 0 no-repeat;
+    background-size: 315px 200px;
+	z-index: 2;
+}
+
+.back2 {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+    background: url('../images/other_img/Security_FlipBox_Back_2.jpg') 0 0 no-repeat;
+    background-size: 315px 200px;
+}
+.front3 {
+	background: url('../images/other_img/Security_FlipBox_Front3_EQL_CI_3.jpg') 0 0 no-repeat;
+    background-size: 315px 200px;
+	z-index: 2;
+}
+
+.back3 {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+    background: url('../images/other_img/Security_FlipBox_Back_4.jpg') 0 0 no-repeat;
+    background-size: 315px 200px;
+}
+
+.front .name {
+	font-size: 2em;
+	display: inline-block;
+	background: rgba(33, 33, 33, 0.9);
+	color: #f8f8f8;
+	font-family: Courier;
+	padding: 5px 10px;
+	border-radius: 5px;
+	bottom: 60px;
+	left: 25%;
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+/* Content Sections */
+
+section {
+  padding: 48px;
+}
+
+section .content {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.content h2 {
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+section p {
+  margin: 0;
+}
+
+section p + p {
+  text-indent: 2em;
+}
+
+section + hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  height: 0;
+}
+
+section .gist {
+  margin: 24px 0;
+}
+
+section .gist .gist-data {
+  border-bottom: 0;
+}
+
+section .gist-meta {
+  display: none;
+}
+
+.content code {
+  font-family: monospace, serif;
+  font-size: 14px;
+  color: gray;
+  vertical-align: 1px;
+  white-space: nowrap;
+}
+
+/**/
+.product-img
+{
+    max-height: 500px;
+    max-width: 500px;
+}
+.product-img-box
+{
+    text-align: center;
+}
+.h1-product
+{
+    color: darkcyan;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 700;
+}
+
+.product-text-box{
+    position: relative;
+    margin-top: 15%;
+    left: -15%;
+}
+.bg-concrete
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+/* Intro */
+
+#intro h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+#intro p {
+  margin: 0;
+  font-size: 24px;
+}
+
+#cta {
+  margin-top: 32px;
+}
+
+.cta {
+  color: #fff;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 0 4px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: white;
+  color: #228B22;
+  text-decoration: none;
+}
+
+
+/* Footer */
+
+#footer {
+  text-align: center;
+}
+
+#social {
+  margin: 16px;
+  list-style: none;
+}
+
+#social li {
+  display: inline-block;
+  margin: 8px;
+}
+
+/*------------------------------------------------------*/
+/* RESPONSIVE
+/*------------------------------------------------------*/
+
+@media (max-width: 1024px) and (min-width: 768px){
+    .flip-box{
+        position: relative;
+        left: 25%;
+    }
+    .h1-product
+    {
+        text-align: center;
+        font-size: 48px;
+        line-height: 1.5;
+    }
+    .product-text-box{
+        text-align: center;
+        margin-top: 0px;
+        left: 0px;
+    }
+    .product-img
+    {
+        max-height: 400px;
+        max-width: 400px;
+    }
+    .bg-concrete
+    {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .scroll-box{
+    top: 5%;
+    left: 5%;
+    }
+    .h1-scroll-slide{
+        text-align: left;
+        color: aliceblue;
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .h4-scroll-slide{
+        text-align: left;
+        color: aliceblue;
+        font-size: 24px;
+        font-weight: 200;
+    }
+    .h1-scroll-slide-black{
+        text-align: left;
+        color: black;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .h4-scroll-slide-black{
+        text-align: left;
+        color: black;
+        font-size: 24px;
+        font-weight: 200;
+    }
+    .bg-holder {
+      width: 1024px
+      height: 640px;
+      background-size: cover;
+      background-position: 50% 50%;
+      color: #fff;
+    }
+}
+/*---------- MEDIA 480px ----------*/
+@media  (max-width: 768px) and (min-width: 480px){
+    .h1-product
+    {
+        font-size: 40px;
+        line-height: 1.5;
+    }
+    .product-text-box{
+        text-align: center;
+        margin-top: 0px;
+        left: 0px;
+    }
+    .product-img
+    {
+        max-height: 300px;
+        max-width: 300px;
+    }
+    .bg-concrete
+    {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .flip-box{
+        position: relative;
+        left: 20%;
+    }
+    .scroll-box{
+    top: 5%;
+    left: 5%;
+    }
+    .h1-scroll-slide{
+        text-align: left;
+        color: aliceblue;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .h4-scroll-slide{
+        text-align: left;
+        color: aliceblue;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .h1-scroll-slide-black{
+        text-align: left;
+        color: black;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .h4-scroll-slide-black{
+        text-align: left;
+        color: black;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .bg-holder {
+      width: 768px;
+      height: 480px;
+      background-size: cover;
+      background-position: 50% 50%;
+      color: #fff;
+    }
+}
+@media  (max-width: 480px) {
+    .h1-product
+    {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+    .product-text-box{
+        text-align: center;
+        margin-top: 0px;
+        left: 0px;
+    }
+    .product-img
+    {
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .bg-concrete
+    {
+        min-height: 100%;
+        min-width: 100%;
+    }
+    .scroll-box{
+    top: 10%;
+    left: 10%;
+    }
+    .h1-scroll-slide{
+        text-align: left;
+        color: aliceblue;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .h4-scroll-slide{
+        text-align: left;
+        color: aliceblue;
+        font-size: 14px;
+        font-weight: 100;
+    }
+    .h1-scroll-slide-black{
+        text-align: left;
+        color: black;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .h4-scroll-slide-black{
+        text-align: left;
+        color: black;
+        font-size: 14px;
+        font-weight: 100;
+    }
+    .bg-holder {
+      width: 480px;
+      height: 300px;
+      background-size: cover;
+      background-position: 50% 50%;
+      color: #fff;
+    }
+    
+}
+/*./CAROUSEL./*/
+.h4-product {
+    text-align: center;
+}
